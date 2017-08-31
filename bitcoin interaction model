@@ -1,0 +1,152 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "ChangeIntent",
+      "samples": [
+        "Has the value of bitcoin changed today"
+      ],
+      "slots": []
+    },
+    {
+      "name": "ValueIntent",
+      "samples": [
+        "how much is {currency} worth",
+        "how much is {currency} worth in {exchange} "
+      ],
+      "slots": [
+        {
+          "name": "currency",
+          "type": "cryptocurrency",
+          "samples": []
+        },
+        {
+          "name": "exchange",
+          "type": "pair",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "cryptocurrency",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "bitcoin",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bitcoin cash",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "litecoin",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ethereum classic",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "doge coin",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "z cash",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ethereum",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "dash",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ripple",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "monero",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "stellar lumens",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "pair",
+      "values": [
+        {
+          "id": "USD",
+          "name": {
+            "value": "US dollars",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "EUR",
+          "name": {
+            "value": "Euros",
+            "synonyms": []
+          }
+        },
+        {
+          "id": "BTC",
+          "name": {
+            "value": "bitcoin",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
